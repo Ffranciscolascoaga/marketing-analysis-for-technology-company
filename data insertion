@@ -1,0 +1,373 @@
+use empresa_tecnologica;
+
+#INSERCION DE DATOS
+
+INSERT INTO clientes  VALUES
+(1, 'Ana', 'García', 'ana.garcia@email.com', '123-456-7890', 'Calle 1, #123', 'Buenos Aires', 'Argentina'),
+(2, 'Juan', 'González', 'juan.gonzalez@email.com', '555-555-5555', 'Avenida 2, #45', 'Ciudad de México', 'México'),
+(3, 'María', 'Rodríguez', 'maria.rodriguez@email.com', '987-654-3210', 'Calle 3, #678', 'Madrid', 'España'),
+(4, 'Pedro', 'Pérez', 'pedro.perez@email.com', '555-123-4567', 'Avenida 4, #910', 'Bogotá', 'Colombia'),
+(5, 'Luis', 'Martínez', 'luis.martinez@email.com', '555-987-6543', 'Calle 5, #1112', 'Santiago', 'Chile'),
+(6, 'Carla', 'Fernández', 'carla.fernandez@email.com', '123-789-4560', 'Avenida 6, #1314', 'Buenos Aires', 'Argentina'),
+(7, 'José', 'Gómez', 'jose.gomez@email.com', '555-789-1234', 'Calle 7, #1516', 'Ciudad de México', 'México'),
+(8, 'Alicia', 'López', 'alicia.lopez@email.com', '987-456-3210', 'Avenida 8, #1718', 'Madrid', 'España'),
+(9, 'Santiago', 'Hernández', 'santiago.hernandez@email.com', '555-456-7890', 'Calle 9, #1920', 'Bogotá', 'Colombia'),
+(10, 'Mariana', 'Ramírez', 'mariana.ramirez@email.com', '123-456-7890', 'Avenida 10, #2122', 'Santiago', 'Chile');
+Insert into clientes values
+(11, 'Luis', 'Fernández', 'lfernandez@gmail.com', '555-1234', 'Calle 9 # 123', 'Bogotá', 'Colombia'),
+(12, 'María', 'García', 'mgarcia@yahoo.com', '555-5678', 'Av. Principal # 456', 'Lima', 'Perú'),
+(13, 'José', 'Martínez', 'jmartinez@hotmail.com', '555-9012', 'Rue de la Paix # 789', 'París', 'Francia'),
+(14, 'Ana', 'Santos', 'asantos@gmail.com', '555-3456', 'Rua das Flores # 234', 'São Paulo', 'Brasil'),
+(15, 'Pedro', 'González', 'pgonzalez@yahoo.com', '555-7890', 'Calle 15 # 567', 'Buenos Aires', 'Argentina'),
+(16, 'Julia', 'López', 'jlopez@hotmail.com', '555-2345', 'Carrera 10 # 123', 'Ciudad de México', 'México'),
+(17, 'Carlos', 'Rodríguez', 'crodriguez@gmail.com', '555-6789', 'Avenida del Sol # 456', 'Madrid', 'España'),
+(18, 'Eva', 'Pérez', 'eperez@yahoo.com', '555-0123', 'Rua do Castelo # 789', 'Lisboa', 'Portugal'),
+(19, 'Jorge', 'Hernández', 'jhernandez@hotmail.com', '555-4567', 'Calle 7 # 234', 'Bogotá', 'Colombia'),
+(20, 'Marta', 'Díaz', 'mdiaz@gmail.com', '555-8901', 'Calle 4 # 567', 'Buenos Aires', 'Argentina');
+
+
+INSERT INTO Productos VALUES 
+(1, 'Laptop Acer', 1200.50, 50, 'Laptops', 6),
+(2, 'Smartphone Samsung', 800.99, 100, 'Smartphones', 4),
+(3, 'Tablet Amazon Fire', 150.00, 75, 'Tablets', 10),
+(4, 'Monitor LG', 250.75, 30, 'Monitores', 2),
+(5, 'Teclado Logitech', 30.99, 200, 'Periféricos', 3),
+(6, 'Mouse Microsoft', 20.50, 150, 'Periféricos', 11),
+(7, 'Disco Duro Externo', 80.00, 80, 'Almacenamiento', 5),
+(8, 'Impresora Canon', 150.25, 40, 'Impresoras', 1),
+(9, 'Altavoces Bose', 200.99, 25, 'Audio', 12),
+(10, 'Cámara Sony', 400.50, 10, 'Cámaras', 7),
+(11, 'Smart TV Samsung', 1000.00, 20, 'Televisores', 8),
+(12, 'Auriculares Sony', 75.50, 50, 'Audio', 9),
+(13, 'Router TP-Link', 40.00, 100, 'Redes', 11),
+(14, 'Smartwatch Garmin', 200.25, 30, 'Wearables', 6),
+(15, 'Cámara de seguridad Nest', 300.99, 15, 'Seguridad', 2),
+(16, 'Teclado gamer Razer', 100.00, 80, 'Periféricos', 4),
+(17, 'Laptop Asus', 1500.50, 45, 'Laptops', 10),
+(18, 'Smartphone Xiaomi', 500.99, 90, 'Smartphones', 8),
+(19, 'Tablet Samsung', 300.00, 60, 'Tablets', 12),
+(20, 'Proyector Epson', 400.75, 20, 'Proyectores', 1);
+
+INSERT INTO Sedes VALUES
+(1, 'Buenos Aires', 'Buenos Aires', 'Av. Corrientes 123'),
+(2, 'Córdoba', 'Córdoba', 'Av. Colón 456'),
+(3, 'Rosario', 'Santa Fe', 'Pellegrini 789'),
+(4, 'Mendoza', 'Mendoza', 'San Martín 1010'),
+(5, 'Salta', 'Salta', 'Mitre 555'),
+(6, 'La Plata', 'Buenos Aires', 'Calle 8 765'),
+(7, 'Mar del Plata', 'Buenos Aires', 'Luro 999'),
+(8, 'San Juan', 'San Juan', 'Rivadavia 222'),
+(9, 'Neuquén', 'Neuquén', 'Belgrano 333'),
+(10, 'Tucumán', 'Tucumán', '25 de Mayo 444');
+INSERT INTO Sedes VALUES 
+(11, 'Barcelona', 'Barcelona', 'Calle Diagonal 123'),
+(12, 'Valencia', 'Valencia', 'Avenida del Puerto 456'),
+(13, 'Bilbao', 'Vizcaya', 'Calle Gran Vía 789'),
+(14, 'Córdoba', 'Córdoba', 'Calle Compositor Luís de Narváez 101'),
+(15, 'Granada', 'Granada', 'Calle Reyes Católicos 23'),
+(16, 'Málaga', 'Málaga', 'Calle Larios 45'),
+(17, 'Santander', 'Cantabria', 'Plaza de las Estaciones 67'),
+(18, 'San Sebastián', 'Guipúzcoa', 'Avenida de la Libertad 89'),
+(19, 'Zaragoza', 'Zaragoza', 'Calle Alfonso I 12'),
+(20, 'Tarragona', 'Tarragona', 'Calle Rambla Nova 34');
+
+
+INSERT INTO Ventas VALUES 
+    (1, 1, 3, 1, '2022-04-01', 1200.50, 1),
+    (2, 7, 8, 3, '2022-04-02', 80.00, 2),
+    (3, 10, 5, 4, '2022-04-03', 400.50, 1),
+    (4, 3, 1, 2, '2022-04-04', 150.00, 3),
+    (5, 13, 2, 1, '2022-04-05', 40.00, 1),
+    (6, 8, 7, 5, '2022-04-06', 150.25, 2),
+    (7, 2, 4, 2, '2022-04-07', 800.99, 1),
+    (8, 9, 6, 3, '2022-04-08', 200.99, 1),
+    (9, 6, 9, 4, '2022-04-09', 20.50, 2),
+    (10, 11, 10, 5, '2022-04-10', 1000.00, 1);
+INSERT INTO Ventas VALUES 
+    (11, 5, 3, 4, '2023-04-20', 29.99, 2),
+    (12, 8, 5, 1, '2023-04-21', 159.99, 1),
+    (13, 2, 8, 6, '2023-04-22', 749.99, 1),
+    (14, 14, 12, 10, '2023-04-23', 189.99, 2),
+    (15, 18, 6, 2, '2023-04-24', 439.99, 1),
+    (16, 9, 9, 3, '2023-04-25', 219.99, 1),
+    (17, 3, 2, 9, '2023-04-26', 99.99, 3),
+    (18, 7, 1, 5, '2023-04-27', 79.99, 1),
+    (19, 19, 10, 8, '2023-04-28', 289.99, 1),
+    (20, 15, 4, 7, '2023-04-29', 259.99, 1);
+
+INSERT INTO Proveedores  VALUES 
+(1, 'Proveedor A', 'Av. Siempre Viva 123', '123456789', 'proveedorA@correo.com'),
+(2, 'Proveedor B', 'Calle Falsa 123', '987654321', 'proveedorB@correo.com'),
+(3, 'Proveedor C', 'Av. de la Constitución 789', '456123789', 'proveedorC@correo.com'),
+(4, 'Proveedor D', 'Calle Falsa 456', '789456123', 'proveedorD@correo.com'),
+(5, 'Proveedor E', 'Av. Paseo de la Reforma 555', '321654987', 'proveedorE@correo.com'),
+(6, 'Proveedor F', 'Av. Insurgentes Sur 432', '258369147', 'proveedorF@correo.com'),
+(7, 'Proveedor G', 'Calle 5 de Mayo 678', '963852741', 'proveedorG@correo.com'),
+(8, 'Proveedor H', 'Av. Revolución 456', '741852963', 'proveedorH@correo.com'),
+(9, 'Proveedor I', 'Av. Juárez 789', '369258147', 'proveedorI@correo.com'),
+(10, 'Proveedor J', 'Calle Hidalgo 123', '147258369', 'proveedorJ@correo.com');
+INSERT INTO Proveedores VALUES 
+(11, 'Distribuidora Tecnológica', 'Av. del Sol 123', '555-1234', 'distec@gmail.com'),
+(12, 'Mega Electronix', 'Calle Mayor 456', '555-6789', 'mega_electronix@hotmail.com'),
+(13, 'Tecnología y Más', 'Av. del Paseo 789', '555-4321', 'tecnologiamas@gmail.com'),
+(14, 'Innovatek', 'Calle del Bosque 234', '555-9876', 'innovatek@outlook.com'),
+(15, 'Sistemas y Servicios', 'Av. del Norte 567', '555-2345', 'sistemasyservicios@gmail.com'),
+(16, 'Soluciones Tecnológicas', 'Calle del Sur 890', '555-8765', 'solucionestecno@hotmail.com'),
+(17, 'ElectroInnovación', 'Av. del Este 1234', '555-3456', 'electroinnovacion@gmail.com'),
+(18, 'Tecnología Global', 'Calle del Oeste 5678', '555-6543', 'tecglobal@hotmail.com'),
+(19, 'InforTech', 'Av. del Centro 901', '555-1234', 'infotech@gmail.com'),
+(20, 'Proveedora de Tecnología', 'Calle del Comercio 2345', '555-4321', 'provtec@hotmail.com');
+
+
+INSERT INTO Compras VALUES
+    (1, 3, '2023-04-27', 2, 1250.25),
+    (2, 1, '2023-04-27', 5, 890.50),
+    (3, 4, '2023-04-28', 3, 340.75),
+    (4, 2, '2023-04-28', 1, 207.99),
+    (5, 3, '2023-04-29', 4, 980.00),
+    (6, 1, '2023-04-29', 2, 750.25),
+    (7, 5, '2023-04-30', 1, 620.50),
+    (8, 6, '2023-04-30', 3, 940.75),
+    (9, 2, '2023-05-01', 5, 830.99),
+    (10, 4, '2023-05-01', 2, 1470.00);
+
+INSERT INTO Compras VALUES (11, 4, '2022-01-18', 2, 1400.50),
+                            (12, 6, '2022-02-03', 3, 750.25),
+                            (13, 9, '2022-02-28', 1, 1150.99),
+                            (14, 2, '2022-03-12', 4, 640.75),
+                            (15, 8, '2022-04-05', 3, 1420.50),
+                            (16, 11, '2022-04-20', 2, 2000.00),
+                            (17, 10, '2022-05-06', 1, 360.99),
+                            (18, 5, '2022-06-01', 4, 180.50),
+                            (19, 12, '2022-06-18', 3, 450.25),
+                            (20, 7, '2022-07-02', 2, 880.00);
+
+
+INSERT INTO empleados VALUES 
+(1, 3, 'Juan', 'Pérez', 'juan.perez@empresa.com', '555-1234', 'Gerente General', 5000, 'OSDE', '1985-05-12', '2010-02-20'),
+(2, 1, 'María', 'González', 'maria.gonzalez@empresa.com', '555-5678', 'Gerente de Ventas', 4000, 'Swiss Medical', '1988-08-22', '2013-06-10'),
+(3, 2, 'Pedro', 'Rodríguez', 'pedro.rodriguez@empresa.com', '555-4321', 'Gerente de Marketing', 4500, 'Galeno', '1979-11-05', '2005-09-01'),
+(4, 1, 'Luis', 'Martínez', 'luis.martinez@empresa.com', '555-8765', 'Supervisor de Ventas', 3000, 'OSDE', '1990-02-28', '2017-01-15'),
+(5, 3, 'Ana', 'Fernández', 'ana.fernandez@empresa.com', '555-2468', 'Jefa de Proyectos', 3500, 'Galeno', '1982-07-17', '2012-04-05'),
+(6, 2, 'Carlos', 'Sánchez', 'carlos.sanchez@empresa.com', '555-3698', 'Especialista en Marketing Digital', 2800, 'Swiss Medical', '1995-03-09', '2020-01-20'),
+(7, 1, 'Marta', 'López', 'marta.lopez@empresa.com', '555-1357', 'Ejecutiva de Ventas', 2500, 'OSDE', '1987-06-29', '2018-09-05'),
+(8, 3, 'Gabriel', 'Gómez', 'gabriel.gomez@empresa.com', '555-7890', 'Analista de Sistemas', 3200, 'Galeno', '1992-12-01', '2016-07-02'),
+(9, 2, 'Lucía', 'Díaz', 'lucia.diaz@empresa.com', '555-4682', 'Community Manager', 2500, 'Swiss Medical', '1998-04-23', '2021-03-12'),
+(10, 1, 'Diego', 'Alvarez', 'diego.alvarez@empresa.com', '555-2468', 'Representante de Ventas', 2200, 'OSDE', '1991-09-11', '2020-05-20');
+INSERT INTO empleados VALUES 
+    (11, 3, 'Carla', 'García', 'cgarcia@empresa.com', '987654321', 'Desarrollador de software', 2500.00, 'OSDE', '1990-05-12', '2021-01-02'),
+    (12, 5, 'Jorge', 'Pérez', 'jperez@empresa.com', '987654321', 'Analista de datos', 2000.00, 'Swiss Medical', '1988-11-23', '2018-06-15'),
+    (13, 2, 'Mariana', 'Fernández', 'mfernandez@empresa.com', '987654321', 'Gerente de ventas', 3500.00, 'OSDE', '1985-02-10', '2009-08-03'),
+    (14, 1, 'Lucía', 'Rodríguez', 'lrodriguez@empresa.com', '987654321', 'Técnico de soporte', 1800.00, 'Galeno', '1994-07-28', '2017-03-20'),
+    (15, 3, 'Diego', 'Vázquez', 'dvazquez@empresa.com', '987654321', 'Diseñador gráfico', 2200.00, 'OSDE', '1992-01-15', '2020-02-10'),
+    (16, 4, 'Florencia', 'González', 'fgonzalez@empresa.com', '987654321', 'Asistente administrativo', 1500.00, 'Swiss Medical', '1996-12-07', '2021-04-01'),
+    (17, 1, 'Santiago', 'López', 'slopez@empresa.com', '987654321', 'Técnico de soporte', 1900.00, 'Galeno', '1993-08-20', '2018-09-05'),
+    (18, 2, 'Valentina', 'Gómez', 'vgomez@empresa.com', '987654321', 'Gerente de recursos humanos', 3800.00, 'OSDE', '1987-06-18', '2012-11-10'),
+    (19, 5, 'Agustín', 'Suárez', 'asuarez@empresa.com', '987654321', 'Analista de sistemas', 2400.00, 'Swiss Medical', '1991-03-31', '2016-05-30'),
+    (20, 3, 'Ana', 'Castro', 'acastro@empresa.com', '987654321', 'Marketing digital', 2000.00, 'OSDE', '1994-10-09', '2019-12-01');
+
+insert into facturas values
+(1, '2023-04-28', 3, 2, 1200.50),
+(2, '2023-04-27', 5, 1, 800.99),
+(3, '2023-04-26', 2, 4, 150.00),
+(4, '2023-04-25', 1, 3, 250.75),
+(5, '2023-04-24', 4, 2, 30.99),
+(6, '2023-04-23', 3, 1, 20.50),
+(7, '2023-04-22', 5, 4, 80.00),
+(8, '2023-04-21', 2, 3, 150.25),
+(9, '2023-04-20', 1, 2, 200.99),
+(10, '2023-04-19', 4, 1, 400.50);
+INSERT INTO facturas VALUES 
+(11, '2022-07-14', 1, 4, 1500.00),
+(12, '2022-08-01', 3, 5, 2500.00),
+(13, '2022-08-15', 9, 3, 1800.00),
+(14, '2022-09-05', 8, 2, 1200.00),
+(15, '2022-09-12', 2, 1, 2000.00),
+(16, '2022-10-01', 6, 4, 950.00),
+(17, '2022-11-08', 7, 5, 1800.00),
+(18, '2022-11-19', 3, 3, 3000.00),
+(19, '2022-12-01', 2, 2, 800.00),
+(20, '2022-12-20', 6, 1, 1500.00);
+
+INSERT INTO pagos VALUES 
+(1, '2022-07-15', 1, 4, 1500.00),
+(2, '2022-08-01', 2, 3, 2500.00),
+(3, '2022-08-20', 3, 19, 1800.00),
+(4, '2022-09-10', 4, 8, 1200.00),
+(5, '2022-09-18', 5, 12, 2000.00),
+(6, '2022-10-05', 6, 6, 950.00),
+(7, '2022-11-10', 7, 7, 1800.00),
+(8, '2022-11-20', 8, 3, 3000.00),
+(9, '2022-12-05', 9, 1, 800.00),
+(10, '2022-12-22', 2, 6, 1500.00),
+(11, '2023-01-15', 1, 4, 750.00),
+(12, '2023-02-01', 2, 3, 1250.00),
+(13, '2023-02-20', 3, 9, 900.00),
+(14, '2023-03-10', 4, 8, 600.00),
+(15, '2023-03-18', 5, 12, 1000.00),
+(16, '2023-04-05', 6, 16, 475.00),
+(17, '2023-05-10', 7, 7, 900.00),
+(18, '2023-05-20', 8, 3, 1500.00),
+(19, '2023-06-05', 9, 2, 400.00),
+(20, '2023-06-22', 2, 6, 750.00);
+
+INSERT INTO gastos VALUES 
+(1, '2023-01-05', 'Suministros de oficina', 'Compra de papel y tinta de impresora', 250.00),
+(2, '2023-01-10', 'Servicios públicos', 'Pago de factura de luz', 350.00),
+(3, '2023-01-15', 'Mantenimiento', 'Reparación de aire acondicionado', 900.00),
+(4, '2023-01-20', 'Suministros de oficina', 'Compra de carpetas y archivadores', 150.00),
+(5, '2023-01-25', 'Servicios públicos', 'Pago de factura de agua', 250.00),
+(6, '2023-02-05', 'Publicidad', 'Contratación de servicio de marketing digital', 1500.00),
+(7, '2023-02-10', 'Mantenimiento', 'Reemplazo de bombillas', 200.00),
+(8, '2023-02-15', 'Suministros de oficina', 'Compra de cartuchos de impresora', 300.00),
+(9, '2023-02-20', 'Servicios públicos', 'Pago de factura de gas', 200.00),
+(10, '2023-02-25', 'Mantenimiento', 'Reparación de sistema de seguridad', 1200.00);
+INSERT INTO gastos VALUES 
+(11, '2022-07-01', 'Servicios Públicos', 'Agua', 200.00),
+(12, '2022-07-05', 'Suministros de Oficina', 'Papel para impresora', 50.00),
+(13, '2022-07-10', 'Publicidad y Marketing', 'Anuncios en Facebook', 300.00),
+(14, '2022-07-15', 'Servicios Profesionales', 'Asesoría contable', 500.00),
+(15, '2022-07-20', 'Mantenimiento y Reparaciones', 'Arreglo de computadoras', 800.00),
+(16, '2022-07-25', 'Arriendos', 'Alquiler de local', 1500.00),
+(17, '2022-07-30', 'Seguros y Fianzas', 'Seguro de responsabilidad civil', 1000.00),
+(18, '2022-08-03', 'Publicidad y Marketing', 'Anuncios en Google', 400.00),
+(19, '2022-08-08', 'Suministros de Oficina', 'Tóner para impresora', 100.00),
+(20, '2022-08-13', 'Servicios Profesionales', 'Servicios jurídicos', 700.00);
+
+
+
+INSERT INTO ordenes_de_gastos VALUES 
+(1, '2023-04-01', 4, 7, 'Compra de suministros de oficina', 500.00),
+(2, '2023-04-03', 2, 5, 'Pago por servicios de limpieza', 800.00),
+(3, '2023-04-05', 3, 3, 'Compra de materiales de construcción', 1500.00),
+(4, '2023-04-08', 1, 2, 'Pago por servicios de publicidad', 2000.00),
+(5, '2023-04-12', 5, 1, 'Compra de equipo informático', 3500.00),
+(6, '2023-04-15', 4, 6, 'Pago por servicios de mensajería', 200.00),
+(7, '2023-04-18', 2, 4, 'Compra de productos para cafetería', 300.00),
+(8, '2023-04-21', 3, 3, 'Pago por servicios de seguridad', 1200.00),
+(9, '2023-04-23', 1, 2, 'Compra de materiales de construcción', 800.00),
+(10, '2023-04-27', 5, 1, 'Pago por servicios de contabilidad', 1500.00);
+INSERT INTO ordenes_de_gastos VALUES 
+(11, '2022-07-14', 3, 9, 'Compra de suministros de oficina', 1200.00),
+(12, '2022-08-01', 5, 6, 'Pago de facturas de luz y agua', 1800.00),
+(13, '2022-08-15', 2, 10, 'Compra de materiales de construcción', 2500.00),
+(14, '2022-09-05', 1, 8, 'Pago de alquiler de maquinaria', 1500.00),
+(15, '2022-09-12', 4, 7, 'Compra de materiales para el taller', 2000.00),
+(16, '2022-10-01', 6, 9, 'Pago de servicios de mantenimiento', 950.00),
+(17, '2022-11-08', 3, 6, 'Compra de equipos de seguridad', 1800.00),
+(18, '2022-11-19', 5, 8, 'Pago de impuestos', 3000.00),
+(19, '2022-12-01', 2, 10, 'Compra de mobiliario de oficina', 800.00),
+(20, '2022-12-20', 1, 7, 'Pago de servicios de limpieza', 1500.00);
+
+
+INSERT INTO inventario VALUES 
+(1, 2, 1, 20),
+(2, 6, 2, 15),
+(3, 4, 3, 10),
+(4, 1, 1, 25),
+(5, 3, 2, 18),
+(6, 7, 3, 13),
+(7, 9, 1, 22),
+(8, 5, 2, 17),
+(9, 10, 3, 9),
+(10, 8, 1, 27);
+INSERT INTO inventario VALUES 
+(11, 3, 1, 50),
+(12, 4, 2, 20),
+(13, 8, 3, 35),
+(14, 7, 4, 60),
+(15, 1, 5, 10),
+(16, 6, 1, 40),
+(17, 9, 2, 25),
+(18, 2, 3, 30),
+(19, 1, 4, 50),
+(20, 4, 5, 15);
+
+INSERT INTO campañas_marketing VALUES 
+(1, 'Promo Verano', 'Descuentos en productos de verano', '2023-06-01', '2023-07-01', 5000.00, 'Redes Sociales'),
+(2, 'Black Friday', 'Grandes descuentos en todos los productos', '2023-11-25', '2023-11-27', 10000.00, 'Email Marketing'),
+(3, 'Navidad', 'Promociones especiales en productos navideños', '2023-12-01', '2024-01-06', 7500.00, 'TV'),
+(4, 'Rebajas', 'Descuentos en toda la tienda', '2024-01-15', '2024-02-15', 6000.00, 'Redes Sociales'),
+(5, 'San Valentín', 'Promociones especiales en productos románticos', '2024-02-10', '2024-02-14', 2500.00, 'Email Marketing'),
+(6, 'Carnaval', 'Descuentos en disfraces y productos para carnaval', '2024-03-01', '2024-03-05', 3000.00, 'TV'),
+(7, 'Día de la Madre', 'Regalos especiales para mamá', '2024-05-01', '2024-05-10', 4000.00, 'Redes Sociales'),
+(8, 'Halloween', 'Descuentos en productos para Halloween', '2024-10-28', '2024-11-01', 4500.00, 'Email Marketing'),
+(9, 'Cyber Monday', 'Grandes descuentos en la tienda online', '2024-11-25', '2024-11-26', 8000.00, 'TV'),
+(10, 'Navidad', 'Promociones especiales en productos navideños', '2024-12-01', '2025-01-06', 10000.00, 'Redes Sociales');
+INSERT INTO campañas_marketing VALUES 
+(11, 'Venta Flash', 'Ofertas especiales por tiempo limitado', '2023-05-15', '2023-05-17', 5000.00, 'Redes Sociales'),
+(12, 'Lanzamiento de producto', 'Presentación de nuevo producto al mercado', '2023-06-01', '2023-06-30', 8000.00, 'Email marketing'),
+(13, 'Campaña de fidelización', 'Promociones exclusivas para clientes frecuentes', '2023-07-01', '2023-07-31', 6000.00, 'SMS'),
+(14, 'Aniversario de la marca', 'Celebra con nosotros nuestro aniversario', '2023-08-15', '2023-08-31', 10000.00, 'Televisión'),
+(15, 'Cyber Monday', 'Grandes descuentos en productos seleccionados', '2023-11-27', '2023-11-28', 7000.00, 'Sitio web'),
+(16, 'Black Friday', 'Ofertas increíbles en toda la tienda', '2023-11-24', '2023-11-25', 9000.00, 'Redes Sociales'),
+(17, 'Navidad en la tienda', 'Celebra la navidad con nosotros', '2023-12-15', '2023-12-24', 12000.00, 'Radio'),
+(18, 'Rebajas de enero', 'Precios especiales en productos seleccionados', '2024-01-15', '2024-01-31', 5000.00, 'Email marketing'),
+(19, 'Campaña de verano', 'Disfruta del verano con nuestras promociones', '2024-06-01', '2024-06-30', 8000.00, 'Televisión'),
+(20, 'Vuelta al cole', 'Prepara la vuelta al cole con nuestros descuentos', '2024-08-01', '2024-09-15', 10000.00, 'Sitio web');
+
+INSERT INTO productos_promocionados VALUES 
+(1, 'Laptop', 'Laptop con procesador i7 y tarjeta gráfica dedicada', 'Electrónica', 1500.00, 0.15, 5),
+(2, 'Silla de oficina', 'Silla ergonómica para oficina', 'Muebles', 200.00, 0.1, 3),
+(3, 'Zapatos deportivos', 'Zapatos deportivos para running', 'Calzado', 80.00, 0.2, 7),
+(4, 'Pantalones de mezclilla', 'Pantalones de mezclilla de alta calidad', 'Ropa', 50.00, 0.25, 2),
+(5, 'Cámara digital', 'Cámara digital con lente intercambiable', 'Electrónica', 800.00, 0.1, 9),
+(6, 'Mochila', 'Mochila para laptop y accesorios', 'Accesorios', 40.00, 0.05, 8),
+(7, 'Reloj inteligente', 'Reloj inteligente con pantalla táctil', 'Electrónica', 100.00, 0.2, 6),
+(8, 'Juego de herramientas', 'Juego de herramientas para mecánica', 'Herramientas', 150.00, 0.15, 4),
+(9, 'Gorra de béisbol', 'Gorra de béisbol con diseño moderno', 'Accesorios', 20.00, 0.3, 1),
+(10, 'Libro de cocina', 'Libro de cocina con recetas gourmet', 'Libros', 30.00, 0.2, 10),
+(11, 'Auriculares inalámbricos', 'Auriculares inalámbricos con cancelación de ruido', 'Electrónica', 120.00, 0.1, 2),
+(12, 'Botella de agua', 'Botella de agua reutilizable', 'Accesorios', 10.00, 0.4, 8),
+(13, 'Guitarra eléctrica', 'Guitarra eléctrica con amplificador', 'Instrumentos musicales', 500.00, 0.15, 3),
+(14, 'Maleta de viaje', 'Maleta de viaje con ruedas', 'Accesorios', 100.00, 0.2, 9),
+(15, 'Paraguas', 'Paraguas con diseño colorido', 'Accesorios', 15.00, 0.25, 5),
+(16, 'Bicicleta de montaña', 'Bicicleta de montaña con suspensión', 'Deportes', 800.00, 0.1, 6),
+(17, 'Tablet', 'Tablet con pantalla de alta resolución', 'Electrónica', 300.00, 0.2, 4),
+(18, 'Silla plegable', 'Silla plegable para playa o jardín', 'Muebles', 25.00, 0.3, 1);
+
+
+INSERT INTO analisis_ventas VALUES 
+(1, '2022-01-01', 2500.00, 800.00, 1),
+(2, '2022-02-01', 3800.00, 1000.00, 1),
+(3, '2022-03-01', 2000.00, 900.00, 2),
+(4, '2022-04-01', 4200.00, 1200.00, 2),
+(5, '2022-05-01', 3500.00, 900.00, 3),
+(6, '2022-06-01', 1800.00, 750.00, 3),
+(7, '2022-07-01', 2800.00, 800.00, 4),
+(8, '2022-08-01', 4100.00, 1100.00, 4),
+(9, '2022-09-01', 1700.00, 900.00, 5),
+(10, '2022-10-01', 3900.00, 1300.00, 5),
+(11, '2022-11-01', 4500.00, 1200.00, 6),
+(12, '2022-12-01', 2900.00, 1000.00, 6),
+(13, '2023-01-01', 3300.00, 900.00, 7),
+(14, '2023-02-01', 4200.00, 1100.00, 7),
+(15, '2023-03-01', 2500.00, 950.00, 8),
+(16, '2023-04-01', 3700.00, 1200.00, 8),
+(17, '2023-05-01', 4800.00, 1400.00, 9),
+(18, '2023-06-01', 2000.00, 800.00, 9),
+(19, '2023-07-01', 3200.00, 1100.00, 10),
+(20, '2023-08-01', 3900.00, 1200.00, 10);
+
+INSERT INTO interacciones_clientes VALUES 
+(1, '2023-04-01', 'Llamada telefónica', 'Consulta sobre precios', 10),
+(2, '2023-04-02', 'Correo electrónico', 'Reclamo por producto defectuoso', 5),
+(3, '2023-04-03', 'Visita en tienda', 'Asesoramiento sobre productos', 8),
+(4, '2023-04-04', 'Chat en línea', 'Solicitud de información sobre envío', 2),
+(5, '2023-04-05', 'Correo electrónico', 'Sugerencia de mejora en servicio postventa', 2),
+(6, '2023-04-06', 'Llamada telefónica', 'Compra de productos', 4),
+(7, '2023-04-07', 'Visita en tienda', 'Reclamo por atención al cliente', 6),
+(8, '2023-04-08', 'Chat en línea', 'Consulta sobre disponibilidad de productos', 5),
+(9, '2023-04-09', 'Correo electrónico', 'Solicitud de factura electrónica', 9),
+(10, '2023-04-10', 'Llamada telefónica', 'Reclamo por retraso en entrega', 7),
+(11, '2023-04-11', 'Visita en tienda', 'Asesoramiento sobre productos', 3),
+(12, '2023-04-12', 'Chat en línea', 'Consulta sobre características de producto', 4),
+(13, '2023-04-13', 'Correo electrónico', 'Solicitud de devolución de producto', 9),
+(14, '2023-04-14', 'Llamada telefónica', 'Compra de productos', 1),
+(15, '2023-04-15', 'Visita en tienda', 'Reclamo por calidad de producto', 2),
+(16, '2023-04-16', 'Chat en línea', 'Solicitud de cotización de productos', 2),
+(17, '2023-04-17', 'Correo electrónico', 'Sugerencia de mejora en tienda en línea', 3),
+(18, '2023-04-18', 'Llamada telefónica', 'Consulta sobre precios', 6),
+(19, '2023-04-19', 'Visita en tienda', 'Reclamo por falta de stock', 8),
+(20, '2023-04-20', 'Chat en línea', 'Solicitud de información sobre garantía', 1);
+
