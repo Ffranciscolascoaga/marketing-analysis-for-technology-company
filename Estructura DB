@@ -1,0 +1,175 @@
+create database if not exists Empresa_Tecnologica;
+
+Use Empresa_Tecnologica;
+
+#Empresa on 5 sedes en el pais
+
+drop table Ventas;
+Create table Ventas (
+ID_Venta int primary key,
+ID_Producto int, 
+ID_Cliente int,
+ID_Sede int,
+Fecha_Venta date,
+Precio_Venta float,
+Cantidad_Vendida int,
+foreign key (ID_producto) references Productos(ID_Producto),
+foreign key (ID_Cliente) references Clientes(ID_Cliente),
+foreign key (ID_Sede) references Sedes(ID_Sede)
+);
+
+Drop table Productos;
+Create table Productos (
+ID_producto int primary key,
+Nombre varchar(50),
+Precio float,
+Stock int, 
+Categoria varchar(50)
+);
+
+CREATE TABLE Sedes (
+   ID_Sede INT PRIMARY KEY,
+   Ciudad VARCHAR(50),
+   Provincia VARCHAR(50),
+   Direccion VARCHAR(100)
+);
+
+drop table Clientes;
+Create table Clientes (
+ID_Cliente int primary key,
+Nombre varchar(50) not null,
+Apellido varchar(50) not null,
+Correo varchar(100),
+Telefono varchar(20),
+Direccion varchar(100),
+Ciudad varchar(50),
+Pais varchar (50)
+);
+
+drop table Proveedores;
+Create table Proveedores (
+ID_proveedores INT primary key,
+Nombre varchar (225),
+direccion varchar(100),
+telefo varchar (50),
+Correo varchar (100)
+);
+
+#Agrego a la tabla productos el id_proveedores y le creo una foreign key
+
+alter table productos
+add column ID_Proveedores INT references Proveedores(ID);
+
+Create table Compras (
+ID_Compras int primary key,
+ID_Proveedores int,
+fecha date,
+ID_Sede int,
+Total decimal(10, 2),
+foreign key (ID_Proveedores) references Proveedores(ID_Proveedores),
+foreign key (ID_Sede) references Sedes(ID_Sede)
+);
+
+Drop table Empleados;
+Create table Empleados (
+ID_Empleado int primary key,
+ID_Sede int,
+nombre varchar (50) not null,
+apellido varchar (50) not null,
+correo varchar (100),
+telefono varchar (25),
+puesto varchar (100),
+salario decimal (10, 2),
+Obra_social varchar (100),
+Fecha_nacimiento date,
+Fecha_Contratacion date,
+foreign key (ID_Sede) references Sedes(ID_Sede)
+);
+
+CREATE TABLE Facturas (
+    ID_Facturas INT PRIMARY KEY,
+    fecha DATE,
+    ID_Cliente INT,
+    ID_Sede INT,
+    total DECIMAL(10, 2),
+    FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente),
+    FOREIGN KEY (ID_Sede) REFERENCES Sedes(ID_Sede)
+);
+
+CREATE TABLE pagos (
+    id INT PRIMARY KEY,
+    fecha DATE,
+     ID_Facturas INT,
+    ID_Cliente INT,
+    monto DECIMAL(10, 2),
+    FOREIGN KEY (ID_Facturas) REFERENCES Facturas(ID_Facturas),
+    FOREIGN KEY (ID_Cliente) REFERENCES clientes(ID_Cliente)
+);
+
+CREATE TABLE gastos (
+    ID_Gastos INT PRIMARY KEY,
+    fecha DATE,
+    categoria VARCHAR(255),
+    descripcion TEXT,
+    monto DECIMAL(10, 2)
+);
+
+CREATE TABLE ordenes_de_gastos (
+    ID INT PRIMARY KEY,
+    fecha DATE,
+    ID_Proveedores INT,
+    ID_Empleado INT,
+    descripcion TEXT,
+    monto DECIMAL(10, 2),
+    FOREIGN KEY (ID_Proveedores) REFERENCES Proveedores(ID_Proveedores),
+    FOREIGN KEY (ID_Empleado) REFERENCES Empleados(ID_Empleado)
+);
+
+CREATE TABLE inventario (
+    ID_Inventario INT PRIMARY KEY,
+    ID_Producto INT,
+    ID_Sede INT,
+    cantidad INT,
+    FOREIGN KEY (ID_Producto) REFERENCES Productos(ID_Producto),
+    FOREIGN KEY (ID_Sede) REFERENCES Sedes(ID_Sede)
+);
+
+CREATE TABLE Campañas_Marketing (
+  id_campaña INTEGER PRIMARY KEY,
+  nombre_campaña TEXT NOT NULL,
+  descripcion TEXT,
+  fecha_inicio DATE NOT NULL,
+  fecha_fin DATE NOT NULL,
+  presupuesto NUMERIC(10,2) NOT NULL,
+  canal TEXT NOT NULL
+);
+
+CREATE TABLE Productos_promocionados (
+  id_producto INTEGER PRIMARY KEY,
+  nombre_producto TEXT NOT NULL,
+  descripcion TEXT,
+  categoria TEXT NOT NULL,
+  precio NUMERIC(10,2) NOT NULL,
+  descuento NUMERIC(10,2),
+  id_campaña INTEGER NOT NULL,
+  FOREIGN KEY (id_campaña) REFERENCES Campañas_Marketing(id_campaña)
+);
+
+CREATE TABLE Analisis_ventas (
+  id_analisis INTEGER PRIMARY KEY,
+  fecha_analisis DATE NOT NULL,
+  ventas_totales NUMERIC(10,2) NOT NULL,
+  costo_promedio_adquisicion NUMERIC(10,2) NOT NULL,
+  id_campaña INTEGER NOT NULL,
+  FOREIGN KEY (id_campaña) REFERENCES Campañas_Marketing(id_campaña)
+);
+
+CREATE TABLE Interacciones_clientes (
+  id_interaccion INTEGER PRIMARY KEY,
+  fecha_interaccion DATE NOT NULL,
+  tipo_interaccion TEXT NOT NULL,
+  descripcion TEXT,
+  id_cliente INTEGER NOT NULL,
+  FOREIGN KEY (id_cliente) REFERENCES Clientes(id_cliente)
+);
+
